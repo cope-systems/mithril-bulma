@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Icon = {
+let Icon = {
     view: function(vnode) {
         return m(`span.${vnode.children ? "icon-text" : "icon"}`, { ...vnode.attrs }, [
             
@@ -12,4 +12,4 @@ var Icon = {
     }
 }
     
-export default Icon
+module.exports = Icon

@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from '../Utility'
+const m = require('mithril');
+const Util = require('../Utility');
     
-var Section = {
+let Section = {
     view: function(vnode) {
         return m(`section.section.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     }
 }
     
-export default Section
+module.exports = Section

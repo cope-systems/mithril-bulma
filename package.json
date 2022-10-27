@@ -1,7 +1,6 @@
 {
   "name": "mithril-bulma",
   "version": "1.0.0",
-  "type": "module",
   "description": "Bulma CSS Components Library for MithrilJS",
   "keywords": ["Bulma", "MithrilJS"],
   "repository": {

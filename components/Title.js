@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Title = {
+let Title = {
     view: function(vnode) {
         return m(`p.title.${Util.getClasses(vnode.attrs)}`, { ...vnode.attrs }, vnode.children)
     }
 }
     
-export default Title
+module.exports = Title

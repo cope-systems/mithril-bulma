@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from '../Utility'
+const m = require('mithril');
+const Util = require('../Utility');
     
-var Container = {
+let Container = {
     view: function(vnode) {
         return m(`.container.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     }
 }
     
-export default Container
+module.exports = Container

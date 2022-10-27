@@ -1,8 +1,8 @@
-import m from 'mithril'
-import Icon from "./Icon"
-import Util from './Utility'
+const m = require('mithril');
+const Icon = require("./Icon");
+const Util = require('./Utility');
     
-var Dropdown = {
+let Dropdown = {
     view: function(vnode) {
         return m(`.dropdown.${Util.getClasses(vnode.attrs)}`, { ...vnode.attrs }, vnode.children)
     },
@@ -37,4 +37,4 @@ var Dropdown = {
     }
 }
     
-export default Dropdown
+module.exports = Dropdown

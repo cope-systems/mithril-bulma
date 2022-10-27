@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Button = {
+let Button = {
     view: function(vnode) {
         return m(`button.button.${Util.getClasses(vnode.attrs)}`, { ...vnode.attrs }, vnode.children)
     }
 }
     
-export default Button
+module.exports = Button

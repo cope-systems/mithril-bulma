@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Navbar = {
+let Navbar = {
     view: function(vnode) {
         return m(`nav.navbar.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     },
@@ -49,4 +49,4 @@ var Navbar = {
     },
 }
     
-export default Navbar
+module.exports = Navbar

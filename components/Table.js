@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Table = {
+let Table = {
     view: function(vnode) {
         return m(`table.table.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     },
@@ -13,4 +13,4 @@ var Table = {
     }
 }
     
-export default Table
+module.exports = Table

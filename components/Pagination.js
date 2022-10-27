@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Pagination = {
+let Pagination = {
     view: function(vnode) {
         return m(`nav.pagination.${Util.getClasses(vnode.attrs)}`, vnode.attrs, [
             m("ul.pagination-list", vnode.children)
@@ -33,4 +33,4 @@ var Pagination = {
     }
 }
     
-export default Pagination
+module.exports = Pagination

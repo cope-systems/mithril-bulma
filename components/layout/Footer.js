@@ -1,9 +1,9 @@
-import m from 'mithril'
+const m = require("mithril");
     
-var Footer = {
+let Footer = {
     view: function(vnode) {
         return m('footer.footer', vnode.attrs, vnode.children)
     }
 }
     
-export default Footer
+module.exports = Footer;

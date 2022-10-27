@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Breadcrumb = {
+let Breadcrumb = {
     view: function(vnode) {
         return m(`nav.breadcrumb.${Util.getClasses(vnode.attrs)}.${vnode.attrs.separator && Util.getBreadcrumbSeparator(vnode.attrs.separator)}`, { ...vnode.attrs }, m("ul", vnode.children))
     },
@@ -13,4 +13,4 @@ var Breadcrumb = {
     }
 }
     
-export default Breadcrumb
+module.exports = Breadcrumb

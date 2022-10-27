@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Panel = {
+let Panel = {
     view: function(vnode) {
         return m(`nav.panel.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     },
@@ -37,4 +37,4 @@ var Panel = {
     }
 }
     
-export default Panel
+module.exports = Panel

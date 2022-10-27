@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Image = {
+let Image = {
     view: function(vnode) {
         return m(`figure.image.${Util.getClasses(vnode.attrs)}`, [
             m(`img.${vnode.attrs.rounded && "is-rounded"}`, vnode.attrs)
@@ -9,4 +9,4 @@ var Image = {
     }
 }
     
-export default Image
+module.exports = Image

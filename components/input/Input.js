@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from '../Utility'
+const m = require('mithril');
+const Util = require('../Utility');
     
-var Input = {
+let Input = {
     view: function(vnode) {
         return m(`${vnode.attrs.as}.${vnode.attrs.as}.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     }
 }
     
-export default Input
+module.exports = Input

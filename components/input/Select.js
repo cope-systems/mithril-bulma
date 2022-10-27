@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from '../Utility'
+const m = require('mithril');
+const Util = require('../Utility');
     
-var Select = {
+let Select = {
     view: function(vnode) {
         return m(`.select.${Util.getClasses(vnode.attrs)}`, vnode.attrs, m("select", vnode.children))
     },
@@ -13,4 +13,4 @@ var Select = {
     }
 }
     
-export default Select
+module.exports = Select

@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Group = {
+let Group = {
     view: function(vnode) {
         return m(`.${vnode.attrs.type ? vnode.attrs.type : "div"}.${vnode.attrs.addons && "has-addons"}`, { ...vnode.attrs }, [
             vnode.children
@@ -8,4 +8,4 @@ var Group = {
     }
 }
     
-export default Group
+module.exports = Group

@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from '../Utility'
+const m = require('mithril');
+const Util = require('../Utility');
     
-var Columns = {
+let Columns = {
     view: function(vnode) {
         return m(`.columns.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     },
@@ -13,4 +13,4 @@ var Columns = {
     }
 }
     
-export default Columns
+module.exports = Columns

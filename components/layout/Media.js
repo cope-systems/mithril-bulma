@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Media = {
+let Media = {
     view: function(vnode) {
         return m('article.media', vnode.attrs, vnode.children)
     },
@@ -24,4 +24,4 @@ var Media = {
     }
 }
     
-export default Media
+module.exports = Media

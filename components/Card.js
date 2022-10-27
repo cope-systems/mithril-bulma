@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Card = {
+let Card = {
     view: function(vnode) {
         return m('.card', { ...vnode.attrs }, vnode.children)
     },
@@ -38,4 +38,4 @@ var Card = {
     }
 }
     
-export default Card
+module.exports = Card

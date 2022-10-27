@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Delete = {
+let Delete = {
     view: function(vnode) {
         return m(`button.delete.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     }
 }
     
-export default Delete
+module.exports = Delete

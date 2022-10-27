@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Progress = {
+let Progress = {
     view: function(vnode) {
         return m(`progress.progress.${Util.getClasses(vnode.attrs)}`, { ...vnode.attrs })
     }
 }
     
-export default Progress
+module.exports = Progress

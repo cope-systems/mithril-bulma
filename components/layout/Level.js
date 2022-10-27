@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Level = {
+let Level = {
     view: function(vnode) {
         return m('nav.level', vnode.attrs, vnode.children)
     },
@@ -24,4 +24,4 @@ var Level = {
     }
 }
     
-export default Level
+module.exports = Level

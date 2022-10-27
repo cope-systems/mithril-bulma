@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Modal = {
+let Modal = {
     view: function(vnode) {
         return m(`.modal.${vnode.attrs.active && "is-active"}`, { ...vnode.attrs }, [
             vnode.children,
@@ -21,4 +21,4 @@ var Modal = {
     }
 }
     
-export default Modal
+module.exports = Modal

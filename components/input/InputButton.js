@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var InputButton = {
+let InputButton = {
     view: function(vnode) {
         return m(`label.${vnode.attrs.as}`, [
             m("input.mr-2", { type: vnode.attrs.as, ...vnode.attrs }),
@@ -9,4 +9,4 @@ var InputButton = {
     }
 }
     
-export default InputButton
+module.exports = InputButton

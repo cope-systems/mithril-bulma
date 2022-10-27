@@ -1,9 +1,9 @@
-var Util = {
+let Util = {
     getClasses: function(attrs) {
         const classes = []
         
         if (attrs.is) {
-            var isClasses = attrs.is.split(" ")
+            let isClasses = attrs.is.split(" ")
             isClasses.map((isClass) => {
                 classes.push(`is-${isClass}`)
             })
@@ -53,4 +53,4 @@ var Util = {
     }
 }
 
-export default Util
+module.exports = Util;

@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Notification = {
+let Notification = {
     view: function(vnode) {
         return m(`.notification.${Util.getClasses(vnode.attrs)}`, { ...vnode.attrs }, [
             vnode.attrs.hasDelete && m("button.delete"),
@@ -10,4 +10,4 @@ var Notification = {
     }
 }
     
-export default Notification
+module.exports = Notification

@@ -1,7 +1,7 @@
-import m from 'mithril'
-import Util from '../Utility'
+const m = require('mithril');
+const Util = require('../Utility');
     
-var Hero = {
+let Hero = {
     view: function(vnode) {
         return m(`section.hero.${Util.getClasses(vnode.attrs)}`, vnode.attrs, vnode.children)
     },
@@ -13,4 +13,4 @@ var Hero = {
     }
 }
     
-export default Hero
+module.exports = Hero

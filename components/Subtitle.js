@@ -1,10 +1,10 @@
-import m from 'mithril'
-import Util from './Utility'
+const m = require('mithril');
+const Util = require('./Utility');
     
-var Subtitle = {
+let Subtitle = {
     view: function(vnode) {
         return m(`p.subtitle.${Util.getClasses(vnode.attrs)}`, { ...vnode.attrs }, vnode.children)
     }
 }
     
-export default Subtitle
+module.exports = Subtitle

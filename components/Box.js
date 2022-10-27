@@ -1,9 +1,9 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Box = {
+let Box = {
     view: function(vnode) {
         return m('.box', {...vnode.attrs}, vnode.children)
     }
 }
     
-export default Box
+module.exports = Box

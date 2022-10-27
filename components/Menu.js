@@ -1,6 +1,6 @@
-import m from 'mithril'
+const m = require('mithril');
     
-var Menu = {
+let Menu = {
     view: function(vnode) {
         return m('aside.menu', { ...vnode.attrs }, vnode.children)
     },
@@ -24,4 +24,4 @@ var Menu = {
     }
 }
     
-export default Menu
+module.exports = Menu

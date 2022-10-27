@@ -1,9 +1,9 @@
-import m from 'mithril'
-import Util from '../Utility'
+const m = require('mithril');
+const Util = require('../Utility');
     
-var FileInput = {
+let FileInput = {
     getFileName: function(e) {
-        var files = e.target.files
+        let files = e.target.files
         this.fileName = files[0].name
     },
     fileName: "",
@@ -19,4 +19,4 @@ var FileInput = {
     }
 }
     
-export default FileInput
+module.exports = FileInput
